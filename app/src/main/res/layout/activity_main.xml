@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FDFDFD">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_background"
+        android:gravity="center_vertical"
+        android:text="BMI Calculator"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/black"
+        android:radius="180dp"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <EditText
+        android:id="@+id/edtheight"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/straighten_24dp"
+        android:hint="Enter Your Height in Feet.Inches"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="#ACACAC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <EditText
+        android:id="@+id/edtweight"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/monitor_weight_24dp"
+        android:hint="Enter Your Weight in Kgs"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#ACACAC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
