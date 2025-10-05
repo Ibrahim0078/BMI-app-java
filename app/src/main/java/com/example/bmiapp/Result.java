@@ -1,4 +1,3 @@
-
 package com.example.bmiapp;
 
 import android.annotation.SuppressLint;
@@ -34,6 +33,7 @@ public class Result extends AppCompatActivity {
         txtBMIscore = findViewById(R.id.txtBMIscore);
         txtBMICategory = findViewById(R.id.txtBMICategory);
         txtBMIchartdata = findViewById(R.id.txtBMIchartdata);
+        seekBarBMI = findViewById(R.id.seekBarBMI);
 
         Intent intent = getIntent();
         float bmi = intent.getFloatExtra("bmi",0.0f);
